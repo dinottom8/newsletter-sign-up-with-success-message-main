@@ -100,10 +100,7 @@ input {
     body {
         width: 375px;
         height: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        margin: auto;
     }
     
     #main {

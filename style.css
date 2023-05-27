@@ -98,13 +98,64 @@ input {
 
 @media screen and (max-width: 1000px) {
     body {
+        width: 375px;
         height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
+    
     #main {
+        padding: 0;
         flex-direction: column-reverse;
+        margin: auto;
     }
-    .attribution {
-        display: none;
+    
+    #conteudo {
+        width: 350px;
+        padding: 0px;
     }
 
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 30px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+    
+    #imagemPrincipal {
+        position: relative;
+        left: 0;
+        padding-top: 20px;
+        width: 300px;
+    }
+
+    form {
+        align-items: center;
+    }
+
+    input {
+        width: 300px;
+    }
+    
+    .attribution {
+        position: relative;
+        bottom: 0;
+        background-color: white;
+        padding: 20px;
+        width: 350px;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+    }
 }

@@ -22,10 +22,13 @@
         <li>And much more!</li>
       </ul>
       <form action="">
-        <label for="">Email address</label>
+        <div id="labelErro">
+          <label for="">Email address</label>
+          <div id="mensagemErro">Valid email required</div>
+        </div>
         <input type="email" placeholder="email@company.com" id="inputEmail">
-        <input type="submit" value="Subscribe to monthly newsletter" id="inputButton">
       </form>
+      <button onclick="verificar()" id="inputButton">Subscribe to monthly newsletter</button>
       </div>
       <div>
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagem da ilustração" id="imagemPrincipal">
@@ -45,6 +48,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.github.com/dinottom8/">Mateus Dinotto</a>.
   </div>
+
+  <script src="./app.js"></script>
 
 </body>
 </html>

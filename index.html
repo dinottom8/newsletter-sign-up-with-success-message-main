@@ -26,21 +26,23 @@
           <label for="">Email address</label>
           <div id="mensagemErro">Valid email required</div>
         </div>
-        <input type="email" placeholder="email@company.com" id="inputEmail">
+        <input type="email" placeholder="email@company.com" id="inputEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <button id="inputButton" onclick="chamarPag2()">Subscribe to monthly newsletter</button>
       </form>
-      <button onclick="verificar()" id="inputButton">Subscribe to monthly newsletter</button>
+      
       </div>
       <div>
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagem da ilustração" id="imagemPrincipal">
       </div>
   </section>
 
-  <div style="display: none;">
-    <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to ash@loremcompany.com. 
+  <div id="mainSecondPage">
+    <img id="iconeSucesso" src="./assets/images/icon-success.svg" alt="Ícone de sucesso">
+    <h1 id="tituloThanks">Thanks for subscribing!</h1>
+    <p id="paragrafoThanks">A confirmation email has been sent to ash@loremcompany.com. 
       Please open it and click the button inside to confirm your subscription.
     </p>
-    <button>Dismiss message</button>
+    <button id="buttonDismissMessage" onclick="chamarPag1()">Dismiss message</button>
   </div>
 
   

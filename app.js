@@ -9,6 +9,6 @@ function verificar () {
         document.getElementById("inputEmail").style.backgroundColor = 'hsl(4, 100%, 67%, 0.2)';        
         document.getElementById("mensagemErro").style.display = 'inline'
     } else {
-        window.alert("Tudo certo!");
+        document.getElementById("main").style.display = 'none';
     }
 }
